@@ -50,7 +50,7 @@ export class SideMenuCtrl {
    ];
 
    if (this.showSignout) {
-     this.orgMenu.push({text: "Sign out", url: this.getUrl("/logout"), target: "_self"});
+     this.orgMenu.push({text: "退出", url: this.getUrl("/logout"), target: "_self"});
    }
 
    if (this.contextSrv.hasRole('Admin')) {

@@ -24,13 +24,13 @@ export class NavModelSrv {
   getAlertingNav(subPage) {
     return {
       section: {
-        title: 'Alerting',
+        title: '告警',
         url: 'plugins',
         icon: 'icon-gf icon-gf-alert'
       },
       menu: [
-        {title: 'Alert List', active: subPage === 0, url: 'alerting/list', icon: 'fa fa-list-ul'},
-        {title: 'Notification channels', active: subPage === 1, url: 'alerting/notifications', icon: 'fa fa-bell-o'},
+        {title: '告警列表', active: subPage === 0, url: 'alerting/list', icon: 'fa fa-list-ul'},
+        {title: '通知方式', active: subPage === 1, url: 'alerting/notifications', icon: 'fa fa-bell-o'},
       ]
     };
   }
@@ -103,7 +103,7 @@ export class NavModelSrv {
   getAdminNav(subPage) {
     return {
       section: {
-        title: 'Admin',
+        title: '管理员',
         url: 'admin',
         icon: 'fa fa-fw fa-cogs'
       },

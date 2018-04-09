@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#000">
 
-    <title>Grafana</title>
+    <title>****Grafana****</title>
 
 		<base href="[[.AppSubUrl]]/" />
 
@@ -41,6 +41,7 @@
 			</div>
 
 			<div ng-view class="main-view"></div>
+      <!--
 			<footer class="footer">
 				<div class="row text-center">
 					<ul>
@@ -76,9 +77,11 @@
 					</ul>
 				</div>
 			</footer>
+    -->
 		</grafana-app>
 
 	<script>
+    console.log("index page =======>");
 		window.grafanaBootData = {
 			user:[[.User]],
 			settings: [[.Settings]],

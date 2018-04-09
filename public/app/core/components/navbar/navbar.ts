@@ -10,6 +10,7 @@ export class NavbarCtrl {
 
   /** @ngInject */
   constructor(private $rootScope, private contextSrv) {
+    console.log("NavbarCtrl", this.model);
     this.section = this.model.section;
     this.hasMenu = this.model.menu.length > 0;
   }
