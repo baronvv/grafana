@@ -17,6 +17,9 @@ import {impressions} from 'app/features/dashboard/impression_store';
 import builtInPlugins from './built_in_plugins';
 import d3 from 'vendor/d3/d3';
 
+//vendor
+import echarts from 'echarts';
+
 // rxjs
 import {Observable} from 'rxjs/Observable';
 import {Subject} from 'rxjs/Subject';
@@ -70,6 +73,9 @@ exposeToPlugin('angular', angular);
 exposeToPlugin('d3', d3);
 exposeToPlugin('rxjs/Subject', Subject);
 exposeToPlugin('rxjs/Observable', Observable);
+
+//vendor
+exposeToPlugin('echarts',echarts);
 
 // backward compatible path
 exposeToPlugin('vendor/npm/rxjs/Rx', {
@@ -135,4 +141,3 @@ export function loadPluginCss(options) {
     System.import(options.dark + '!css');
   }
 }
-
