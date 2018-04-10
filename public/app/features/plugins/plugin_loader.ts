@@ -27,6 +27,8 @@ import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/combineAll';
 
+import echarts from 'echarts';
+
 System.config({
   baseURL: 'public',
   defaultExtension: 'js',
@@ -70,6 +72,8 @@ exposeToPlugin('angular', angular);
 exposeToPlugin('d3', d3);
 exposeToPlugin('rxjs/Subject', Subject);
 exposeToPlugin('rxjs/Observable', Observable);
+
+exposeToPlugin('echarts', echarts);
 
 // backward compatible path
 exposeToPlugin('vendor/npm/rxjs/Rx', {
